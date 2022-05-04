@@ -56,7 +56,8 @@ RUN apt-get update -qq && apt-get install -y \
   nmap \
   git \
   socat \
-  lsof && \
+  lsof \
+  iperf3 && \
   rm -rf /var/lib/apt/lists/*
 
 ENTRYPOINT ["/usr/bin/dumb-init", "--"]
